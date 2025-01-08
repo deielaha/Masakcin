@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="./Images/Logo/logo-fix.png" alt="logo fix.png">
+        <a href="index.html">
+            <h1>MASAKCIN</h1>
+        </a>
+        <div class="nav-bar">
+            <a href="about.html"></a>
+                <h3>About</h3>
+            </a>
+            <a href="index.html">
+                <h3>Makanan</h3>
+            </a>
+            <a href="feedback.html">
+                <h3>Feedback</h3>
+            </a>
+        </div>
+        <div class="section-right">
+            <a href="javascript:void(0);" id="search-icon">
+                <img class="search-icon2" src="./Images/Logo/search2.png" alt="Search Icon">
+            </a>
+            <a href="#" id="loginLink" class="login-btn">Masuk</a>
+        </div>
+
+    </div>
+    <div class="search-bar" id="search-bar">
+        <input class="search-box" type="text" spellcheck="false" placeholder="Masak Apa Hari Ini?" />
+        <img class="search-icon" src="./Images/Logo/search.png" alt="Search Icon">
+    </div>
+
+    <div class="container">
+        <div class="judul-kategori">
+            <h1>Dessert</h1>
+            <hr>
+        </div>
+
+        <div class="daftar-resep">
+            <a href="detail-resep.html?id=tiramisu-dessert-box" class="resep" id="tiramisu-dessert-box">
+                <img class="gambar-resep" src="./Images/resep dessert/tiramisu-desert.png" alt="Tiramisu Dessert Box">
+                <div class="info">
+                    <h3>Resep Tiramisu Dessert Box</h3>
+                </div>
+            </a>
+
+            <a href="detail-resep.html?id=dessert-box-oreo" class="resep" id="dessert-box-oreo">
+                <img class="gambar-resep" src="./Images/resep dessert/oreo.jpg" alt="Dessert Box Oreo">
+                <div class="info">
+                    <h3>Resep Dessert Box Oreo</h3>
+                </div>
+            </a>
+
+            <a href="detail-resep.html?id=stup-roti-tawar-keju" class="resep" id="stup-roti-tawar-keju">
+                <img class="gambar-resep" src="./Images/resep dessert/stup-roti.jpg" alt="Stup Roti Tawar Keju">
+                <div class="info">
+                    <h3>Resep Stup Roti Tawar Keju</h3>
+                </div>
+            </a>
+
+            <a href="detail-resep.html?id=fudge-brownies" class="resep" id="fudge-brownies">
+                <img class="gambar-resep" src="./Images/resep dessert/fudge.jpg" alt="Fudge Brownies">
+                <div class="info">
+                    <h3>Resep Fudge Brownies</h3>
+                </div>
+            </a>
+
+            <a href="detail-resep.html?id=banoffe-pie-dessert-box" class="resep" id="banoffe-pie-dessert-box">
+                <img class="gambar-resep" src="./Images/resep dessert/banofee.jpg" alt="Banoffee Pie Dessert Box">
+                <div class="info">
+                    <h3>Resep Banoffee Pie Dessert Box</h3>
+                </div>
+            </a>
+
+            <a href="detail-resep.html?id=rainbow-cake" class="resep" id="rainbow-cake">
+                <img class="gambar-resep" src="./Images/resep dessert/rainbow.jpg" alt="Rainbow Cake">
+                <div class="info">
+                    <h3>Resep Rainbow Cake</h3>
+                </div>
+            </a>
+
+            <a href="detail-resep.html?id=red-velvet-cake" class="resep" id="red-velvet-cake">
+                <img class="gambar-resep" src="./Images/resep dessert/redvelvet.jpg" alt="Red Velvet Cake">
+                <div class="info">
+                    <h3>Resep Red Velvet Cake</h3>
+                </div>
+            </a>
+
+            <a href="detail-resep.html?id=es-cendol-dawet" class="resep" id="es-cendol-dawet">
+                <img class="gambar-resep" src="./Images/resep dessert/cendol.jpeg" alt="Es Cendol Dawet">
+                <div class="info">
+                    <h3>Resep Es Cendol Dawet</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="loginModal" class="login-modal" style="display: none;">
+        <div class="modal-content">
+          <span id="closeModal" class="close-btn">&times;</span>
+          <div class="login-logo" style="display: flex; justify-content: center;">
+            <img class="logo" src="./Images/Logo/logo-fix.png" alt="logo fix.png">
+          </div>
+          <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+            <p style="text-align: center;">Belum punya akun ? <a href="#" id="registerLink">Daftar</a></p>
+            
+          </form>
+          <form id="registerForm" style="display: none;">
+            <label for="namaLengkap">Nama Lengkap:</label>
+            <input type="text" id="new-nama" name="new-nama" required><br><br>
+            <label for="telpon">No Telpon:</label>
+            <input type="text" id="new-telpon" name="new-telpon" required><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="new-email" name="new-email" required><br><br>
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" required><br><br>
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" required><br><br>
+            <button type="submit">Daftar</button>
+            <p style="text-align: center;">Sudah punya akun? <a href="#" id="loginLinkFromRegister">Login</a></p>
+          </form>
+          <span id="closeModalRegister" class="close-btn">&times;</span>
+        </div>
+      </div>
+</div>
+<a href="#" id="loginLinkSide" class="login-btn" style="display: none;">Masuk (Sidebar)</a>
+
+    <div class="footer">
+        <p>&copy; 2024 MASAKCIN. All Rights Reserved.</p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
